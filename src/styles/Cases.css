@@ -1,0 +1,77 @@
+
+.cases {
+    background: rgba(30, 30, 30, 0.5);
+    backdrop-filter: blur(4px);
+    padding: 32px 0;
+}
+
+.cases-title {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    background-color: rgba(30, 30, 30, 0.5);
+    color: orange;
+    box-shadow: #1a1a1a 0 0 10px 10px;
+}
+
+.case-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+.case-list-item {
+    position: relative;
+    background: linear-gradient(145deg, #222, #1a1a1a);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    cursor: pointer;
+}
+
+.case-list-item img {
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+    transition: transform 0.3s;
+}
+
+.case-list-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(247, 147, 26, 0.3);
+}
+
+.case-list-item:hover .case-list-item img {
+    transform: scale(1.05);
+}
+
+.case-list-item h3 {
+    margin: 0 0 20px 0;
+    font-size: 22px;
+    text-align: center;
+    color: darkorange;
+    background: #333;
+    padding: 8px;
+}
+
+.open-case-button {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to right, #fba22b, #da6d02, #b15703);
+    color: #333;
+    border: none;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+}

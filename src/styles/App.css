@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: "Roboto Light", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/cs2.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.container {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
