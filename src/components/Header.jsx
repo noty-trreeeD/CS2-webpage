@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import cs2logo from '../images/cs2logoSvg.svg';
 import '../styles/Header.css'
 import {Link} from "react-router-dom";
