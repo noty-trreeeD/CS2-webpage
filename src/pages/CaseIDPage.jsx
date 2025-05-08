@@ -11,11 +11,11 @@ export const CaseIdPage = () => {
 
     return (
         <div className='casePage container'>
-            <h1>{currantCase.name}</h1>
+            <h1 className='cases-title'>{currantCase.name}</h1>
             <div className="scroll-container">
                 <LootScroll caseId={currantCase} />
             </div>
-            <img src={currantCase.photo} alt="" />
+            <img className='case-loot-img' src={currantCase.photo} alt="" />
             <LootList caseId={currantCase} />
         </div>
     );

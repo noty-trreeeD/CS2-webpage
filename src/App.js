@@ -7,7 +7,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import {CaseIdPage} from "./pages/CaseIDPage";
 
-function App() {
+export const App = () => {
     return (
         <BrowserRouter>
             <Header />
@@ -20,5 +20,3 @@ function App() {
         </BrowserRouter>
     )
 }
-
-export default App;
